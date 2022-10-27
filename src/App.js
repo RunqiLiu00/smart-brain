@@ -145,7 +145,7 @@ class App extends Component{
       //.then(results=>(JSON.parse(results)))
       .then(response => {
         if(response){
-          fetch('http://localhost:3000/image',{
+          fetch('https://arcane-ravine-81384.herokuapp.com/image',{
             method:'put',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({
